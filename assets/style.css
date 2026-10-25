@@ -9,6 +9,7 @@
   --accent: #ff8a3d;
   --accent-2: #ffb347;
   --accent-3: #ff5f3a;
+  --grad-text: linear-gradient(100deg, var(--accent-2), var(--accent-3));
   --live: #4ade80;
   --building: #fbbf24;
   --oss: #60a5fa;
@@ -27,7 +28,8 @@
     --border: rgba(60, 40, 20, 0.12);
     --text: #1d1712;
     --muted: #6b5e51;
-    --accent: #e8661d;
+    --accent: #b4470c;
+    --grad-text: linear-gradient(100deg, #c2550a, #b3261e);
     --live: #15803d;
     --building: #b45309;
     --oss: #1d4ed8;
@@ -148,7 +150,7 @@ h1 {
 }
 
 .grad {
-  background: linear-gradient(100deg, var(--accent-2), var(--accent-3));
+  background: var(--grad-text);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -361,7 +363,7 @@ h1 {
   min-width: 1.6ch;
   font-size: 36px;
   line-height: 1;
-  background: linear-gradient(100deg, var(--accent-2), var(--accent-3));
+  background: var(--grad-text);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -403,7 +405,16 @@ h1 {
 .footer a:hover { color: var(--text); }
 
 @media (max-width: 760px) {
-  .nav nav a:not(.nav-cta) { display: none; }
+  html { scroll-padding-top: 124px; }
+  .nav { flex-wrap: wrap; row-gap: 8px; padding-bottom: 10px; }
+  .nav nav {
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav nav a { flex: none; padding: 6px 10px; font-size: 14px; }
+  .nav nav .nav-cta { position: absolute; top: 12px; right: 16px; }
   .hero { padding: 72px 0 64px; }
   .section { padding: 52px 0; }
   .about { grid-template-columns: 1fr; gap: 28px; }

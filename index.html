@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaksForge · Small, free apps</title>
+  <meta name="description" content="Small, free Android apps and tools by Maksymilian Średniawa. No ads, no tracking.">
+  <meta name="theme-color" content="#0f0d0b">
+  <meta property="og:title" content="MaksForge">
+  <meta property="og:description" content="Small, free Android apps and tools. No ads, no tracking.">
+  <meta property="og:url" content="https://maksforge.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://maksforge.com/">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="MaksForge home">
+      <img src="assets/mark.svg" alt="" width="32" height="32">
+      <span>MaksForge</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#live">Apps</a>
+      <a href="#building">In development</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="glow" aria-hidden="true"></div>
+      <p class="eyebrow">Independent apps &amp; tools</p>
+      <h1>Small apps that do one thing <span class="grad">well</span>.</h1>
+      <p class="lede">I build free Android apps and browser extensions that respect the people using them. Everything stays on your device.</p>
+      <ul class="pills" aria-label="Principles">
+        <li>No ads</li>
+        <li>No tracking</li>
+        <li>No accounts</li>
+        <li>Works offline</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="#live">See the apps</a>
+        <a class="btn ghost" href="https://github.com/maksforge">GitHub</a>
+      </div>
+    </section>
+
+    <section id="live" class="section">
+      <div class="section-head">
+        <span class="status live">Live</span>
+        <h2>In production</h2>
+        <p>Available now on Google Play.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="icon" src="assets/icons/binky.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Binky</h3>
+            <p class="kind">Android app</p>
+            <p>Track your rabbit's weight, health and care, so a slow change over weeks shows up instead of being forgotten.</p>
+          </div>
+          <div class="links">
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=binky.bunny.and.rabbit.tracker">Google Play</a>
+            <a class="btn small ghost" href="/binky-app/">Website</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="icon" src="assets/icons/gloam.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Gloam</h3>
+            <p class="kind">Android app</p>
+            <p>Dim the screen below Android's lowest brightness, for reading in the dark without the glare.</p>
+          </div>
+          <div class="links">
+            <a class="btn small primary" href="https://play.google.com/store/apps/details?id=io.github.srednimax.gloam">Google Play</a>
+            <a class="btn small ghost" href="/gloam/">Website</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="building" class="section">
+      <div class="section-head">
+        <span class="status building">Building</span>
+        <h2>In development</h2>
+        <p>Being built and tested right now.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="icon" src="assets/icons/urgent.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Urgent call</h3>
+            <p class="kind">Android app</p>
+            <p>Rings when the same number calls twice within a few minutes, even with your phone on silent or Do Not Disturb.</p>
+          </div>
+          <div class="links">
+            <a class="btn small ghost" href="/urgent/">Website</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="icon" src="assets/icons/kozica.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Kozica</h3>
+            <p class="kind">Android app</p>
+            <p>An offline trail map of the Polish mountains, drawn in the colours of the trail signposts.</p>
+          </div>
+          <div class="links">
+            <a class="btn small ghost" href="/kozica/">Website</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="icon" src="assets/icons/play-console-dark-theme.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Dark Theme for Play Console</h3>
+            <p class="kind">Chrome extension</p>
+            <p>Switches on the dark palette that is already hidden inside Google Play Console. Unofficial, not affiliated with Google.</p>
+          </div>
+          <div class="links">
+            <a class="btn small ghost" href="https://github.com/maksforge/play-console-dark-theme">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="open-source" class="section">
+      <div class="section-head">
+        <span class="status oss">Open source</span>
+        <h2>Tools</h2>
+        <p>Building blocks I use myself, free to reuse.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img class="icon" src="assets/icons/android-starter.webp" alt="" width="64" height="64">
+          <div class="card-body">
+            <h3>Android starter</h3>
+            <p class="kind">Template</p>
+            <p>A starting point for offline Android apps: Compose skeleton, release pipeline, CI gates and device drivers.</p>
+          </div>
+          <div class="links">
+            <a class="btn small ghost" href="https://github.com/maksforge/android-starter">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ideas" class="section">
+      <div class="section-head">
+        <span class="status idea">Ideas</span>
+        <h2>On the workbench</h2>
+        <p>What might come next.</p>
+      </div>
+      <div class="placeholder">
+        <span class="spark" aria-hidden="true"></span>
+        <p><strong>New ideas are coming soon.</strong> When the next project leaves the sketchbook, you'll see it here first.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-text">
+        <p class="eyebrow">About me</p>
+        <h2>Hi, I'm Maksymilian.</h2>
+        <p>MaksForge is where I build the small tools I wish existed. Each one solves a single problem, works without an internet connection, and never asks for an account or shows an ad.</p>
+        <p>Every app is free. If one of them makes your day a little easier, a tip helps me keep building, but it never unlocks anything.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>2</strong><span>apps live on Google Play</span></li>
+        <li><strong>3</strong><span>projects in development</span></li>
+        <li><strong>0</strong><span>ads or trackers</span></li>
+      </ul>
+    </section>
+
+    <section id="support" class="section support">
+      <h2>Like what I make?</h2>
+      <p>The apps stay free. Tips are optional and very appreciated.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://buymeacoffee.com/maksforge">☕ Buy me a coffee</a>
+        <a class="btn ghost" href="https://paypal.me/maksymiliansredniawa">PayPal</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Maksymilian Średniawa · MaksForge</span>
+    <a href="https://github.com/maksforge">github.com/maksforge</a>
+  </footer>
+</body>
+</html>

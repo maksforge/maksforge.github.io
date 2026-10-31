@@ -228,6 +228,12 @@ h1 {
 
 .section-head p { margin: 0; color: var(--muted); }
 
+.subsection-head { margin: 48px 0 20px; }
+
+.subsection-head h3 { margin: 0 0 6px; font-size: 22px; }
+
+.subsection-head p { margin: 0; color: var(--muted); }
+
 .status {
   display: inline-flex;
   align-items: center;

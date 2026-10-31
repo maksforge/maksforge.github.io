@@ -230,7 +230,7 @@ h1 {
 
 .subsection-head { margin: 48px 0 20px; }
 
-.section-head + .subsection-head { margin-top: 8px; }
+.section-head + .subsection-head { margin-top: 0; }
 
 .subsection-head h3 { margin: 0 0 6px; font-size: 22px; }
 
